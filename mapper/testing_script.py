@@ -7,7 +7,7 @@ MAP = """.........
 CCTTCCTTS
 WWWWWWW.W
 """
-KEY="mmSSsgBijcRqvbjdRq5f0WocMjblUxAxhUM7r0Z94OlKiP4W1Y5v1BQpmkvw0I6V8GKOaPNhDdZKR2ROsdacPmJXvpReLWOW4Iw8xFtUqxas2cTBBblstYCqyif6IZOg"
+KEY="vWGp6fbdam4Sb46bDcqLQcRrBIFZ5WBGCoCywK2pdGEta3CnN6rlOnGZ0973CRQ7N687WN0f18yG5bpZSLkLorn9RUpbdE3xzAO20xYiqKJbhl4TEqmHXEin9SLH3kRB"
 print(DOMAIN+"/api/map/")
 res = requests.post(DOMAIN+"/api/map/", data={"map":MAP, "key":KEY})
 print(res.status_code, res.text)
