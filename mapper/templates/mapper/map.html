@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submarine Map</title>
+</head>
+<body>
+<h1>Submarine Map</h1>
+{% for line in lines %}
+    <div style="margin: 0; box-sizing: border-box; height: 24px">
+        {% spaceless %}
+            {% for char in line %}
+                {% if char|upper == 'W' %}
+                    <img alt="Wall" width="24" height="24" src="{% static "obstruction.svg" %}">
+                {% elif char|upper == "." %}
+                    <img alt="Normal" width="24" height="24" src="{% static "normal.svg" %}">
+                {% elif char|upper == "S" %}
+                    <img alt="Stormy" width="24" height="24" src="{% static "storm.svg" %}">
+                {% elif char|upper == "C" %}
+                    <img alt="Calm" width="24" height="24" src="{% static "calm.svg" %}">
+                {% elif char|upper == "D" %}
+                    <img alt="Docking Station" width="24" height="24" src="{% static "parking.svg" %}">
+                {% elif char|upper == "N" %}
+                    <img alt="NPC" width="24" height="24" src="{% static "squid.svg" %}">
+                {% elif char|upper == "T" %}
+                    <img alt="Treasure" width="24" height="24" src="{% static "treasure2.svg" %}">
+                {% elif char|upper == "0" %}
+                    <img alt="Submarine 0" width="24" height="24" src="{% static "10.svg" %}">
+                {% elif char|upper == "1" %}
+                    <img alt="Submarine 1" width="24" height="24" src="{% static "1.svg" %}">
+                {% elif char|upper == "2" %}
+                    <img alt="Submarine 2" width="24" height="24" src="{% static "2.svg" %}">
+                {% elif char|upper == "3" %}
+                    <img alt="Submarine 3" width="24" height="24" src="{% static "3.svg" %}">
+                {% elif char|upper == "4" %}
+                    <img alt="Submarine 4" width="24" height="24" src="{% static "4.svg" %}">
+                {% elif char|upper == "5" %}
+                    <img alt="Submarine 5" width="24" height="24" src="{% static "5.svg" %}">
+                {% elif char|upper == "6" %}
+                    <img alt="Submarine 6" width="24" height="24" src="{% static "6.svg" %}">
+                {% elif char|upper == "7" %}
+                    <img alt="Submarine 7" width="24" height="24" src="{% static "7.svg" %}">
+                {% elif char|upper == "8" %}
+                    <img alt="Submarine 8" width="24" height="24" src="{% static "8.svg" %}">
+                {% elif char|upper == "9" %}
+                    <img alt="Submarine 9" width="24" height="24" src="{% static "9.svg" %}">
+                {% endif %}
+            {% endfor %}
+        {% endspaceless %}
+    </div>
+{% endfor %}
+</body>
+</html>
