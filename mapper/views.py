@@ -1,3 +1,6 @@
+import json
+from collections import defaultdict
+
 from django.urls import reverse
 from django.http import JsonResponse, HttpResponseForbidden
 from django.utils.decorators import method_decorator
@@ -14,7 +17,11 @@ class MapView(DetailView):
 
     def get_context_data(self, **kwargs):
         data = super().get_context_data(**kwargs)
-        data['lines'] = str(self.object.map).splitlines()
+        data['lines'] = str(self.object.map).strip().splitlines()
+
+        if self.object.names:
+            names = json.loads(self.object.names)
+            data['names'] = names
         return data
 
 
@@ -28,8 +35,9 @@ class CreateMap(View):
             return HttpResponseForbidden("Invalid API key")
 
         if "map" in request.POST:
-            m = Map.objects.create(map=request.POST['map'])
+            m = Map.objects.create(map=request.POST['map'], names=request.POST.get('names', ""))
             result['url'] = reverse("map", kwargs={'slug': m.slug})
         else:
             result['error'] = "Missing map"
+
         return JsonResponse(result)

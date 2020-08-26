@@ -1,0 +1,105 @@
+.icon {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    min-width: 0;
+}
+
+.iconbox {
+    flex: 0 1 24px;
+    width: 24px;
+    height: fit-content;
+    margin: 0;
+    line-height: 0;
+    min-width: 0;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    max-width: 100%;
+    max-height: max-content;
+    min-height: 0;
+    flex-wrap: nowrap;
+
+    justify-content: safe flex-start;
+    align-items: flex-start;
+    background: #55ACEE;
+}
+
+.card {
+    border-width: 1px;
+    border-color: lightgray;
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: max-content;
+    max-width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-content {
+    width: max-content;
+    max-width: 100%;
+
+}
+
+.card > h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    line-height: 1rem;
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 1s;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -100px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+body {
+    padding: 0 60px;
+    font-family: sans-serif;
+}

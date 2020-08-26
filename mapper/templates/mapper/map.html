@@ -1,107 +1,36 @@
-{% load static %}
+{% load static map_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Submarine Map</title>
-    <style>
-        .icon {
-            flex: 0 1 24px;
-            width: 24px;
-            max-height: 24px;
-            margin: 0;
-            min-width: 0;
-        }
-
-        .row {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            display: flex;
-            max-width: 100%;
-            max-height: max-content;
-            min-height: 0;
-            flex-wrap: nowrap;
-
-            justify-content: safe flex-start;
-            align-items: flex-start;
-            background: #55ACEE;
-        }
-
-        .card {
-            border-width: 1px;
-            border-color: lightgray;
-            box-sizing: border-box;
-            border-style: solid;
-            border-radius: 5px;
-            margin: 0 auto;
-            width: max-content;
-            max-width: 100%;
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .card-content {
-            width: max-content;
-            max-width: 100%;
-
-        }
-
-        .card > h1 {
-            text-align: center;
-            margin-top: 0;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{% static "styles.css" %}">
 </head>
 <body>
-<div class="card">
+<div class="card" onclick="void(0)">
     <h1>Submarine Map</h1>
     <div class="card-content">
         {% for line in lines %}
             <div class="row">
                 {% spaceless %}
-                    {% for char in line %}
-                        {% if char|upper == 'W' %}
-                            <img class="icon" alt="Wall" src="{% static "obstruction.svg" %}">
-                        {% elif char|upper == "." %}
-                            <img class="icon" alt="Normal" src="{% static "normal.svg" %}">
-                        {% elif char|upper == "S" %}
-                            <img class="icon" alt="Stormy" src="{% static "storm.svg" %}">
-                        {% elif char|upper == "C" %}
-                            <img class="icon" alt="Calm" src="{% static "calm.svg" %}">
-                        {% elif char|upper == "D" %}
-                            <img class="icon" alt="Docking Station" src="{% static "parking.svg" %}">
-                        {% elif char|upper == "N" %}
-                            <img class="icon" alt="NPC" src="{% static "squid.svg" %}">
-                        {% elif char|upper == "T" %}
-                            <img class="icon" alt="Treasure" src="{% static "treasure2.svg" %}">
-                        {% elif char|upper == "0" %}
-                            <img class="icon" alt="Submarine 0" src="{% static "10.svg" %}">
-                        {% elif char|upper == "1" %}
-                            <img class="icon" alt="Submarine 1" src="{% static "1.svg" %}">
-                        {% elif char|upper == "2" %}
-                            <img class="icon" alt="Submarine 2" src="{% static "2.svg" %}">
-                        {% elif char|upper == "3" %}
-                            <img class="icon" alt="Submarine 3" src="{% static "3.svg" %}">
-                        {% elif char|upper == "4" %}
-                            <img class="icon" alt="Submarine 4" src="{% static "4.svg" %}">
-                        {% elif char|upper == "5" %}
-                            <img class="icon" alt="Submarine 5" src="{% static "5.svg" %}">
-                        {% elif char|upper == "6" %}
-                            <img class="icon" alt="Submarine 6" src="{% static "6.svg" %}">
-                        {% elif char|upper == "7" %}
-                            <img class="icon" alt="Submarine 7" src="{% static "7.svg" %}">
-                        {% elif char|upper == "8" %}
-                            <img class="icon" alt="Submarine 8" src="{% static "8.svg" %}">
-                        {% elif char|upper == "9" %}
-                            <img class="icon" alt="Submarine 9" src="{% static "9.svg" %}">
-                        {% else %}
-                            <img class="icon" alt="Unknown Tile" src="{% static "unknown.svg" %}">
-                        {% endif %}
-                    {% endfor %}
+                    {% with forloop.counter0 as y %}
+                        {% for char in line %}
+                            {% tooltip x=forloop.counter0 y=y as tip %}
+                            {% if tip %}
+                                <div class="iconbox tooltip" onclick="void(0)">
+                                    {% include "mapper/include/icon.html" with icon=char %}
+                                    <span class="tooltiptext">
+                                        {{ tip }}
+                                    </span>
+                                </div>
+                            {% else %}
+                                <div class="iconbox">
+                                    {% include "mapper/include/icon.html" with icon=char %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endwith %}
                 {% endspaceless %}
             </div>
         {% endfor %}

@@ -18,6 +18,7 @@ def new_url():
 # Create your models here.
 class Map(models.Model):
     map = models.TextField()
+    names = models.TextField(blank=True)
     slug = models.CharField(max_length=128, default=new_url, unique=True, auto_created=True)
 
     def get_absolute_url(self):
