@@ -45,6 +45,8 @@
                     <img alt="Submarine 8" width="24" height="24" src="{% static "8.svg" %}">
                 {% elif char|upper == "9" %}
                     <img alt="Submarine 9" width="24" height="24" src="{% static "9.svg" %}">
+                {% else %}
+                    <img alt="Unknown Tile" width="24" height="24" src="{% static "unknown.svg" %}">
                 {% endif %}
             {% endfor %}
         {% endspaceless %}

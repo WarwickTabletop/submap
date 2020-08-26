@@ -59,7 +59,7 @@
      inkscape:label="Layer 1"
      style="display:inline">
     <rect
-       style="opacity:1;fill:#626973;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.34944224;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.34944224;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        id="rect836"
        width="36"
        height="36"
@@ -70,20 +70,6 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="Layer 3">
-
-    <path
-       inkscape:connector-curvature="0"
-       style="fill:#ffffff"
-       d="m 7.9950189,11.175 h -1.829 c -1.488,0 -2.108,-1.085 -2.108,-2.139 0,-1.085 0.775,-2.14 2.108,-2.14 h 4.4020001 c 1.334,0 2.078,0.961 2.078,2.201 V 26.74 c 0,1.551 -0.992,2.418 -2.326,2.418 -1.3330001,0 -2.3250001,-0.867 -2.3250001,-2.418 z"
-       id="path3325" />
-    <path
-       inkscape:connector-curvature="0"
-       style="fill:#ffffff"
-       d="m 15.318019,17.962 c 0,-5.054 1.954,-11.41 8.216,-11.41 6.264,0 8.217,6.356 8.217,11.41 0,5.054 -1.953,11.41 -8.217,11.41 -6.262,0 -8.216,-6.356 -8.216,-11.41 z m 11.596,0 c 0,-2.356 -0.217,-7.193 -3.379,-7.193 -3.162,0 -3.379,4.837 -3.379,7.193 0,2.201 0.217,7.193 3.379,7.193 3.162,0 3.379,-4.992 3.379,-7.193 z"
-       id="path4011" />
-  </g>
+  <path fill="#ffffff" d="M17 27c-1.657 0-3-1.343-3-3v-4c0-1.657 1.343-3 3-3 .603-.006 6-1 6-5 0-2-2-4-5-4-2.441 0-4 2-4 3 0 1.657-1.343 3-3 3s-3-1.343-3-3c0-4.878 4.58-9 10-9 8 0 11 5.982 11 11 0 4.145-2.277 7.313-6.413 8.92-.9.351-1.79.587-2.587.747V24c0 1.657-1.343 3-3 3z"/>
+  <circle fill="#ffffff" cx="17" cy="32" r="3"/>
 </svg>

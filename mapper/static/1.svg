@@ -29,37 +29,15 @@
   </metadata>
   <defs
      id="defs831" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     id="namedview829"
-     showgrid="false"
-     inkscape:zoom="23.555556"
-     inkscape:cx="9.8556252"
-     inkscape:cy="17.185267"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer3" />
-  <path
-     d="M36 32c0 2.209-1.791 4-4 4H4c-2.209 0-4-1.791-4-4V4c0-2.209 1.791-4 4-4h28c2.209 0 4 1.791 4 4v28z"
-     id="path825"
-     fill="#55ACEE" />
+
+
   <g
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="Layer 1"
      style="display:inline">
     <rect
-       style="opacity:1;fill:#ffcc4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.34944224;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       style="opacity:1;fill:#626973;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.34944224;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        id="rect836"
        width="36"
        height="36"
@@ -74,11 +52,6 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Layer 3">
-    <path
-       inkscape:connector-curvature="0"
-       style="display:inline;fill:#ffcc4d;stroke-width:0.61485773"
-       d="m 8.2036501,27.952596 c -1.1757902,0 -1.6941084,-0.792438 -1.1528104,-1.760775 L 17.014416,8.3915806 c 0.541936,-0.9683368 1.428566,-0.9683368 1.970501,0 l 9.963578,17.8008314 c 0.542574,0.967746 0.02362,1.760184 -1.152173,1.760184 z"
-       id="path8183" />
     <path
        inkscape:connector-curvature="0"
        style="fill:#ffffff"
