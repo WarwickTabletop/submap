@@ -1,38 +1,38 @@
 {% load static %}
 {% if icon|upper == 'W' %}
-    <img class="icon" alt="Wall" src="{% static "obstruction.svg" %}">
+    <img class="icon" alt="Wall" title="Impassable Space" src="{% static "obstruction.svg" %}">
 {% elif icon|upper == "." %}
-    <img class="icon" alt="Normal" src="{% static "normal.svg" %}">
+    <img class="icon" alt="Normal" title="Normal Sea" src="{% static "normal.svg" %}">
 {% elif icon|upper == "S" %}
-    <img class="icon" alt="Stormy" src="{% static "storm.svg" %}">
+    <img class="icon" alt="Stormy" title="Stormy Sea" src="{% static "storm.svg" %}">
 {% elif icon|upper == "C" %}
-    <img class="icon" alt="Calm" src="{% static "calm.svg" %}">
+    <img class="icon" alt="Calm" title="Calm Sea" src="{% static "calm.svg" %}">
 {% elif icon|upper == "D" %}
-    <img class="icon" alt="Docking Station" src="{% static "parking.svg" %}">
+    <img class="icon" alt="Docking Station" title="Docking Station" src="{% static "parking.svg" %}">
 {% elif icon|upper == "N" %}
-    <img class="icon" alt="NPC" src="{% static "squid.svg" %}">
+    <img class="icon" alt="NPC" title="NPC Character" src="{% static "squid.svg" %}">
 {% elif icon|upper == "T" %}
-    <img class="icon" alt="Treasure" src="{% static "treasure2.svg" %}">
+    <img class="icon" alt="Treasure" title="Treasure" src="{% static "treasure2.svg" %}">
 {% elif icon|upper == "0" %}
-    <img class="icon" alt="Submarine 0" src="{% static "10.svg" %}">
+    <img class="icon" alt="Submarine 0" title="Submarine" src="{% static "10.svg" %}">
 {% elif icon|upper == "1" %}
-    <img class="icon" alt="Submarine 1" src="{% static "1.svg" %}">
+    <img class="icon" alt="Submarine 1" title="Submarine" src="{% static "1.svg" %}">
 {% elif icon|upper == "2" %}
-    <img class="icon" alt="Submarine 2" src="{% static "2.svg" %}">
+    <img class="icon" alt="Submarine 2" title="Submarine" src="{% static "2.svg" %}">
 {% elif icon|upper == "3" %}
-    <img class="icon" alt="Submarine 3" src="{% static "3.svg" %}">
+    <img class="icon" alt="Submarine 3" title="Submarine" src="{% static "3.svg" %}">
 {% elif icon|upper == "4" %}
-    <img class="icon" alt="Submarine 4" src="{% static "4.svg" %}">
+    <img class="icon" alt="Submarine 4" title="Submarine" src="{% static "4.svg" %}">
 {% elif icon|upper == "5" %}
-    <img class="icon" alt="Submarine 5" src="{% static "5.svg" %}">
+    <img class="icon" alt="Submarine 5" title="Submarine" src="{% static "5.svg" %}">
 {% elif icon|upper == "6" %}
-    <img class="icon" alt="Submarine 6" src="{% static "6.svg" %}">
+    <img class="icon" alt="Submarine 6" title="Submarine" src="{% static "6.svg" %}">
 {% elif icon|upper == "7" %}
-    <img class="icon" alt="Submarine 7" src="{% static "7.svg" %}">
+    <img class="icon" alt="Submarine 7" title="Submarine" src="{% static "7.svg" %}">
 {% elif icon|upper == "8" %}
-    <img class="icon" alt="Submarine 8" src="{% static "8.svg" %}">
+    <img class="icon" alt="Submarine 8" title="Submarine" src="{% static "8.svg" %}">
 {% elif icon|upper == "9" %}
-    <img class="icon" alt="Submarine 9" src="{% static "9.svg" %}">
+    <img class="icon" alt="Submarine 9" title="Submarine" src="{% static "9.svg" %}">
 {% else %}
     <img class="icon" alt="Unknown Tile" src="{% static "unknown.svg" %}">
 {% endif %}
