@@ -11,10 +11,17 @@
 <div class="card" onclick="void(0)">
     <h1>Submarine Map</h1>
     <div class="card-content">
+        <div class="row">
+            <div class="iconbox"></div>
+            {% for i in lines.1 %}
+                <div class="label">{{ forloop.counter }}</div>
+            {% endfor %}
+        </div>
         {% for line in lines %}
             <div class="row">
                 {% spaceless %}
                     {% with forloop.counter0 as y %}
+                        <div class="label">{{ forloop.counter }}</div>
                         {% for char in line %}
                             {% tooltip x=forloop.counter0 y=y as tip %}
                             {% if tip %}
