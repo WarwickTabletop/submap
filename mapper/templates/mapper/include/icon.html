@@ -1,10 +1,12 @@
 {% load static %}
 {% if icon|upper == 'W' %}
-    <img class="icon" alt="Wall" title="Impassable Space" src="{% static "rocks.svg" %}">
+    <img class="icon" alt="Wall" title="Impassable Space" src="{% static "wally.svg" %}">
 {% elif icon|upper == "." %}
     <img class="icon" alt="Normal" title="Normal Sea" src="{% static "normal.svg" %}">
 {% elif icon|upper == "S" %}
     <img class="icon" alt="Stormy" title="Stormy Sea" src="{% static "storm.svg" %}">
+{% elif icon|upper == "R" %}
+    <img class="icon" alt="Rough" title="Rough Sea" src="{% static "rough.svg" %}">
 {% elif icon|upper == "C" %}
     <img class="icon" alt="Calm" title="Calm Sea" src="{% static "calm.svg" %}">
 {% elif icon|upper == "D" %}
@@ -13,6 +15,26 @@
     <img class="icon" alt="NPC" title="NPC Character" src="{% static "squid.svg" %}">
 {% elif icon|upper == "T" %}
     <img class="icon" alt="Treasure" title="Treasure" src="{% static "treasure2.svg" %}">
+{% elif icon|upper == "E" %}
+    <img class="icon" alt="Diverse" title="Diverse Ecology" src="{% static "diverse.svg" %}">
+{% elif icon|upper == "P" %}
+    <img class="icon" alt="Peak" title="Impassable Space (Peak)" src="{% static "peaky.svg" %}">
+{% elif icon|upper == "A" %}
+    <img class="icon" alt="Ruins" title="Ruins" src="{% static "ruins.svg" %}">
+{% elif icon|upper == "M" %}
+    <img class="icon" alt="Deposit" title="Mineral Deposit" src="{% static "deposit.svg" %}">
+{% elif icon|upper == "J" %}
+    <img class="icon" alt="Junk" title="Junk" src="{% static "treasure2.svg" %}">
+{% elif icon|upper == "B" %}
+    <img class="icon" alt="Base" title="Bowie Base 2" src="{% static "base-b.svg" %}">
+{% elif icon|upper == "L" %}
+    <img class="icon" alt="Base" title="Black Market" src="{% static "base-l.svg" %}">
+{% elif icon|upper == "H" %}
+    <img class="icon" alt="Base" title="Hedgewig's World of Adventure" src="{% static "base-h.svg" %}">
+{% elif icon|upper == "Z" %}
+    <img class="icon" alt="Base" title="Stockwood" src="{% static "base-s.svg" %}">
+{% elif icon|upper == "V" %}
+    <img class="icon" alt="Base" title="Vought International" src="{% static "base-v.svg" %}">
 {% elif icon|upper == "0" %}
     <img class="icon" alt="Submarine 0" title="Submarine" src="{% static "10.svg" %}">
 {% elif icon|upper == "1" %}
