@@ -19,14 +19,14 @@
                             {% tooltip x=forloop.counter0 y=y as tip %}
                             {% if tip %}
                                 <div class="iconbox tooltip" onclick="void(0)">
-                                    {% include "mapper/include/icon.html" with icon=char %}
+                                    {% include "mapper/include/icon.html" with icon=char x=forloop.counter0 y=y %}
                                     <span class="tooltiptext">
                                         {{ tip }}
                                     </span>
                                 </div>
                             {% else %}
                                 <div class="iconbox">
-                                    {% include "mapper/include/icon.html" with icon=char %}
+                                    {% include "mapper/include/icon.html" with icon=char x=forloop.counter0 y=y %}
                                 </div>
                             {% endif %}
                         {% endfor %}
