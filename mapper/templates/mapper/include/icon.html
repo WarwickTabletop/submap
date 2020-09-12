@@ -35,8 +35,6 @@
     <img class="icon" alt="Base" title="Stockwood" src="{% static "base-s.svg" %}">
 {% elif icon|upper == "V" %}
     <img class="icon" alt="Base" title="Vought International" src="{% static "base-v.svg" %}">
-{% elif icon|upper == "0" %}
-    <img class="icon" alt="Submarine 0" title="Submarine" src="{% static "10.svg" %}">
 {% elif icon|upper == "1" %}
     <img class="icon" alt="Submarine 1" title="Submarine" src="{% static "1.svg" %}">
 {% elif icon|upper == "2" %}
@@ -55,6 +53,14 @@
     <img class="icon" alt="Submarine 8" title="Submarine" src="{% static "8.svg" %}">
 {% elif icon|upper == "9" %}
     <img class="icon" alt="Submarine 9" title="Submarine" src="{% static "9.svg" %}">
+{% elif icon|upper == "0" %}
+    <img class="icon" alt="Submarine 10" title="Submarine" src="{% static "10.svg" %}">
+{% elif icon|upper == "-" %}
+    <img class="icon" alt="Submarine 11" title="Submarine" src="{% static "11.svg" %}">
+{% elif icon|upper == "+" %}
+    <img class="icon" alt="Submarine 12" title="Submarine" src="{% static "12.svg" %}">
+{% elif icon|upper == "=" %}
+    <img class="icon" alt="Submarine 13" title="Submarine" src="{% static "13.svg" %}">
 {% else %}
     <img class="icon" alt="Unknown Tile" src="{% static "unknown.svg" %}">
 {% endif %}
